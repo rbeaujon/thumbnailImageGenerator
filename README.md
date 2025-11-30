@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# Thumbnail Image Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple generator for casino game thumbnails that creates **420×420** images from the original provider thumbnails, automatically adding the **game name** and **provider name**. The project includes a **Node.js** backend and a web interface to test the generation and download the final images in PNG format.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+Test the web app here:  
+[https://rbeaujon.com/rollhub/SITE/](https://rbeaujon.com/rollhub/SITE/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The API is running at:  
+[http://rollhub.rbeaujon.com/](http://rollhub.rbeaujon.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Installation & Running
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:  
+```bash
+git clone https://github.com/rbeaujon/thumbnailImageGenerator.git
+````
 
-### `npm run build`
+2. Navigate to the project folder:
+```bash
+  cd thumbnailImageGenerator
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+````
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before running, make sure to modify the condition in package.json to work under your desired domain or on localhost.
 
-### `npm run eject`
+4. Start the project:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm run start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Backend (API)
 
-## Learn More
+The server is built with Node.js. To run it:
+Navigate to the API folder inside the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Install dependencies and start the API:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install
+npm run start
+
+
+The API handles receiving original images, generating new thumbnails using an LLM via OpenRouter, and returning the final images ready for download.
+
+Security Note: The project uses an API key stored in a .env file and loaded via dotenv.
+This ensures that sensitive credentials are not exposed in the code or repository, providing an additional layer of security. 
+Make sure to create a .env file with your API key before running the project.
+
+## Usage
+
+The web interface displays a list of games along with their **original thumbnails**.  
+
+For each game:
+
+- Click **Generate** to create a **420×420** thumbnail.
+- Once generated, the new thumbnail will be displayed with a **Download** button to save it as a PNG.
+- Text labels (**game name** and **provider name**) are automatically applied using the **Anton** font from Google Fonts.
+
+---
+
+## Requirements
+
+- **Node.js** installed  
+- Internet connection to access the API and Google Fonts  
+- Modify the domain in `package.json` if running in an environment other than `localhost`
+
+---
+
+## Technologies
+
+- **Frontend:** React + TypeScript  
+- **Backend:** Node.js  
+- **Package Management:** npm  
+- **LLM Integration:** OpenRouter API (for image generation)  
+- **Fonts:** Google Fonts (Anton)
