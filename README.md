@@ -4,9 +4,13 @@ A simple generator for casino game thumbnails that creates **420×420** images f
 
 Preview
 
+<img src="./thumbnailsGenGif.gif" width="80%">
+
+<img src="./Screenshot 2025-11-30 183131.png" width="60%">
+
 <img src="./Screenshot 2025-11-30 182901.png" width="25%">
 
-<img src="./Screenshot 2025-11-30 183131.png" width="80%">
+
 
 
 ## Demo
