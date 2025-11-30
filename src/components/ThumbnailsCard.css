@@ -1,0 +1,58 @@
+#thumbnail-container,
+canvas {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    max-width: 300px;
+    width: 100%;
+    aspect-ratio: 490 / 368;
+    border-radius: 8px;
+}
+
+
+#thumbnail-container div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#thumbnail-container .title {
+    text-transform: capitalize;
+    font-size: 1rem;
+
+}
+
+#thumbnail-container img {
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+}
+
+#thumbnail-container button {
+    color: #fff;
+    background: rgb(249, 29, 128);
+    border: none;
+    border-radius: 7px;
+    box-shadow: rgba(35, 238, 136, 0.3) 0px 0px 9px;
+    padding: 5px 24px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    width: 100%;
+    max-width: 50%;
+}
+
+#thumbnail-container button.downloadPNG {
+    background: #121c1c;
+}
+
+#thumbnail-container button:hover,
+#thumbnail-container button:disabled {
+    background: rgb(207, 11, 99);
+}

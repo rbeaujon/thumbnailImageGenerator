@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { ThumbnailCard } from './components/ThumbnailsCard';
+import { games } from "./data/games";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <h1>Casino Thumbnail Generator</h1>
+      <div className="games-container">
+        {games.map((game) => (
+          <ThumbnailCard key={game.label} game={game} />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
