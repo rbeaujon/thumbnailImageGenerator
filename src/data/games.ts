@@ -1,0 +1,78 @@
+export const games = [{
+    "aggregator": "hub88",
+    "category": "Live Blackjack",
+    "custom_thumb": false,
+    "demo_game_support": false,
+    "game_id": "evo_liveblackjacksilver1",
+    "label": "Blackjack Silver A",
+    "meta": null,
+    "popularity": 0.0,
+    "provider": "Evolution Gaming",
+    "recommendation_score": 0,
+    "release_date": "2018-01-09",
+    "rtp": 99.29,
+    "url_thumb":
+        "https://cdn.hub88.io/evolution/evo_liveblackjacksilvera.jpg"
+},
+{
+    "aggregator": "hub88",
+    "category": "Video Slots",
+    "custom_thumb": false,
+    "demo_game_support": true,
+    "game_id": "hsg_wanteddeadorawild92",
+    "label": "Wanted Dead or a Wild",
+    "meta": null,
+    "popularity": 1.3115630069987462e-7,
+    "provider": "Hacksaw Gaming",
+    "recommendation_score": 0.0010022,
+    "release_date": "2021-09-29",
+    "rtp": 92.0,
+    "url_thumb":
+        "https://cdn.hub88.io/hacksawgaming/hsg_wanteddeadorawild.jpg"
+},
+{
+    "aggregator": "hub88",
+    "category": "Video Slots",
+    "custom_thumb": false,
+    "demo_game_support": true,
+    "game_id": "fzi_wildsanta10",
+    "label": "Wild Santa 10 ",
+    "meta": null,
+    "popularity": 0.0,
+    "provider": "Fazi",
+    "recommendation_score": 0,
+    "release_date": null,
+    "rtp": 95.96,
+    "url_thumb": "https://cdn.hub88.io/fazi/fzi_wildsanta10.jpg"
+},
+{
+    "aggregator": "hub88",
+    "category": "Video Slots",
+    "custom_thumb": false,
+    "demo_game_support": true,
+    "game_id": "atg_gardengnomes",
+    "label": "Garden Gnomes",
+    "meta": null,
+    "popularity": 0.0,
+    "provider": "Apparat Gaming",
+    "recommendation_score": 0,
+    "release_date": "2024-02-14",
+    "rtp": 96.06,
+    "url_thumb": "https://cdn.hub88.io/apparatgaming/atg_gardengnomes.jpg"
+},
+{
+    "aggregator": "hub88",
+    "category": "Video Slots",
+    "custom_thumb": false,
+    "demo_game_support": true,
+    "game_id": "wzn_crazycars94",
+    "label": "Crazy Cars",
+    "meta": null,
+    "popularity": 0.0,
+    "provider": "VoltEnt",
+    "recommendation_score": 0,
+    "release_date": null,
+    "rtp": 93.92,
+    "url_thumb": "https://cdn.hub88.io/wazdan/wzn_crazycars.jpg"
+}
+]
